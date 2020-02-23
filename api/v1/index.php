@@ -21,7 +21,7 @@ delete(table name, where clause as array)
 // Products
 $app->get('/products', function() { 
     global $db;
-    $rows = $db->select("products","id,sku,name,description,price,mrp,stock,image,packing,status",array());
+    $rows = $db->select("products","id,sku,name,description,price,mrp,stock,image,packing,status,manufactorer",array());
     echoResponse(200, $rows);
 });
 

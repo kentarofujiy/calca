@@ -29,6 +29,7 @@ export class ProductDialogComponent implements OnInit {
       packing: [product.packing || ''],
       description: [product.description || ''],
       // status: [product.status || 'Active']
+      manufactorer: [product.manufactorer || ''],
     });
   }
 

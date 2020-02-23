@@ -27,6 +27,11 @@
         [formControl]="productForm.controls['description']">
       </mat-form-field>
 
+      <mat-form-field class="full-width">
+        <input matInput name="manufactorer" placeholder="Maker"
+        [formControl]="productForm.controls['manufactorer']">
+      </mat-form-field>
+
     <div>
       <button mat-button [type]="submit" [disabled]="productForm.invalid">Save</button>
       <span></span>

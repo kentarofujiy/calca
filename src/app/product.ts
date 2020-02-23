@@ -10,6 +10,7 @@ export class Product {
   catgory: number;
   stock: number;
   status: string;
+  manufactorer: string;
 
   constructor(values: Object = {}) {
     Object.assign(this, values);

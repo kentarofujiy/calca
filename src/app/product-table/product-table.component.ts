@@ -15,7 +15,7 @@ export class ProductTableComponent implements OnInit, OnDestroy {
 
   public tabledata: Product[] = [];
   public getProductSub: Subscription;
-  displayedColumns: string[] = ['id', 'name', 'price', 'stock', 'packing', 'description', 'status', 'actions'];
+  displayedColumns: string[] = ['id', 'name', 'price', 'stock', 'packing', 'description', 'status', 'actions', 'manufactorer'];
 
   public my_Class = 'color=primary';
 
