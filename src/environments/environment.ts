@@ -7,7 +7,7 @@ export const environment = {
 
     // URL of development API
     // apiUrl: 'http://localhost:3000'
-    apiUrl: 'http://localhost/inv/api/v1/'
+    apiUrl: 'http://localhost/calca/api/v1/'
 };
 
 /*

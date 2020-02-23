@@ -8,7 +8,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
 
 // const API_URL = environment.apiUrl;
-const API_URL = 'http://localhost/inv/api/v1';
+const API_URL = 'http://localhost/calca/api/v1';
 
 
 @Injectable({

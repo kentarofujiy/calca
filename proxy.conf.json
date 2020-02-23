@@ -1,6 +1,6 @@
 {
   "/api/*": {
-    "target": "http://localhost/inv",
+    "target": "http://localhost/calca",
     "secure": false,
     "logLevel": "debug",
     "changeOrigin": true,
