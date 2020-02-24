@@ -54,6 +54,43 @@ $app->delete('/products/:id', function($id) {
     echoResponse(200, $rows);
 });
 
+
+// Tarifas
+$app->get('/tarifas', function() { 
+    global $db;
+    $rows = $db->select("tarifas","subgrupo,modalidade,classe,id,iddistribuidora,posto,tusd,dtusd,dte,te",array());
+    echoResponse(200, $rows);
+});
+
+$app->post('/tarifas', function() use ($app) { 
+    $data = json_decode($app->request->getBody());
+    $mandatory = array('name');
+    global $db;
+    $rows = $db->insert("tarifas", $data, $mandatory);
+    if($rows["status"]=="success")
+        $rows["message"] = "Tarifa added successfully.";
+    echoResponse(200, $rows);
+});
+
+$app->put('/tarifas/:id', function($id) use ($app) { 
+    $data = json_decode($app->request->getBody());
+    $condition = array('id'=>$id);
+    $mandatory = array();
+    global $db;
+    $rows = $db->update("tarifas", $data, $condition, $mandatory);
+    if($rows["status"]=="success")
+        $rows["message"] = "Tarifa information updated successfully.";
+    echoResponse(200, $rows);
+});
+
+$app->delete('/tarifas/:id', function($id) { 
+    global $db;
+    $rows = $db->delete("tarifas", array('id'=>$id));
+    if($rows["status"]=="success")
+        $rows["message"] = "Tarifa removed successfully.";
+    echoResponse(200, $rows);
+});
+
 function echoResponse($status_code, $response) {
     global $app;
     $app->status($status_code);

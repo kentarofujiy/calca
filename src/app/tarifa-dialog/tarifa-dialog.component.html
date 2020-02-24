@@ -1,0 +1,57 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+  <form [formGroup]="tarifaForm" (ngSubmit)="submit()">
+  <div class="form-container">
+
+      <mat-form-field class="full-width">
+        <input matInput name="subgrupo" placeholder="subgrupo"
+        [formControl]="tarifaForm.controls['subgrupo']">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput  name="modalidade" placeholder="modalidade"
+        [formControl]="tarifaForm.controls['modalidade']">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput  name="classe" placeholder="classe"
+        [formControl]="tarifaForm.controls['classe']">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput name="iddistriubidora" placeholder="iddistriubidora"
+        [formControl]="tarifaForm.controls['iddistriubidora']">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput name="posto" placeholder="posto"
+        [formControl]="tarifaForm.controls['posto']">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput name="tusd" placeholder="tusd"
+        [formControl]="tarifaForm.controls['tusd']">
+      </mat-form-field>
+
+      
+      <mat-form-field class="full-width">
+        <input matInput name="dtusd" placeholder="dtusd"
+        [formControl]="tarifaForm.controls['dtusd']">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput name="dte" placeholder="dte"
+        [formControl]="tarifaForm.controls['dte']">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput name="te" placeholder="te"
+        [formControl]="tarifaForm.controls['te']">
+      </mat-form-field>
+
+    <div>
+      <button mat-button [type]="submit" [disabled]="tarifaForm.invalid">Save</button>
+      <span></span>
+      <button mat-button color="warn" type="button" (click)="dialogRef.close(false)">Cancel</button>
+    </div>
+  </div>
+  </form>

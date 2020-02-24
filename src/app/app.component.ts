@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
+// models
 import { Product } from './product';
+import { Tarifa } from './tarifa';
+// services
 import { ProductDataService} from './product-data.service';
 
 @Component({
@@ -8,8 +11,9 @@ import { ProductDataService} from './product-data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app product mgr';
+  title = 'Energy Cálculo A';
   products: Product[] = [];
+
 
     constructor(private productDataService: ProductDataService) {
     }

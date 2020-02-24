@@ -1,0 +1,100 @@
+<div class="container mat-elevation-z8">
+
+  <div class="form">
+    <mat-form-field floatPlaceholder="never" color="accent">
+      <input matInput #filter (keyup)="applyFilter($event.target.value)" placeholder="Filter tarifas">
+    </mat-form-field>
+  </div>
+
+  <mat-table #table [dataSource]="dataSource" matSort class="mat-cell">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Id</mat-header-cell>
+      <mat-cell *matCellDef="let row" >{{row.id}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="subgrupo">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>subgrupo</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.subgrupo}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="modalidade">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>modalidade</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.modalidade}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="classe">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>classe</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.classe}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="iddistribuidora">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>iddistribuidora</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.iddistribuidora}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="posto">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>posto</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.posto}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="tusd">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>tusd</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.tusd}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="dtusd">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>dtusd</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.dtusd}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="dte">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>dte</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.dte}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="te">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>te</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.te}}</mat-cell>
+    </ng-container>
+
+
+
+
+
+
+    <!-- actions -->
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>
+        <button mat-icon-button color="primary" (click)="editItem({}, true)">
+          <mat-icon aria-label="Example icon-button with a heart icon">add</mat-icon>
+        </button>
+      </mat-header-cell>
+
+      <mat-cell *matCellDef="let row;">
+        <button mat-icon-button color="primary" (click)="editItem(row)">
+          <mat-icon aria-label="Edit">edit</mat-icon>
+        </button>
+
+        <button mat-icon-button color="warn" (click)="deleteItem(row)">
+          <mat-icon aria-label="Delete">delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+
+  <div class="no-results" [style.display]="dataSource?.length == 0 ? '' : 'none'">
+    No results
+  </div>
+
+  <mat-paginator #paginator
+                 [pageIndex]="0"
+                 [pageSize]="10"
+                 [pageSizeOptions]="[5, 10, 25, 50, 100]">
+  </mat-paginator>
+</div>
