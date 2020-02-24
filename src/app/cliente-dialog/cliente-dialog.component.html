@@ -1,0 +1,53 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+  <form [formGroup]="clienteForm" (ngSubmit)="submit()">
+  <div class="form-container">
+
+    <mat-form-field class="full-width">
+      <input matInput name="id" placeholder="id" [formControl]="clienteForm.controls[' id ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="razao" placeholder="razao" [formControl]="clienteForm.controls[' razao ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="cnpj" placeholder="cnpj" [formControl]="clienteForm.controls[' cnpj ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="cidade" placeholder="cidade" [formControl]="clienteForm.controls[' cidade ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="estado" placeholder="estado" [formControl]="clienteForm.controls[' estado ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="grupo" placeholder="grupo" [formControl]="clienteForm.controls[' grupo ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="classe" placeholder="classe" [formControl]="clienteForm.controls[' classe ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="modalidade" placeholder="modalidade" [formControl]="clienteForm.controls[' modalidade ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="potencia" placeholder="potencia" [formControl]="clienteForm.controls[' potencia ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="horasprodutivasduteis" placeholder="horasprodutivasduteis" [formControl]="clienteForm.controls[' horasprodutivasduteis ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="horasprodutivassabados" placeholder="horasprodutivassabados" [formControl]="clienteForm.controls[' horasprodutivassabados ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="horasprodutivasdomingos" placeholder="horasprodutivasdomingos" [formControl]="clienteForm.controls[' horasprodutivasdomingos ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="posto" placeholder="posto" [formControl]="clienteForm.controls[' posto ']">
+      </mat-form-field> 
+      <mat-form-field class="full-width">
+      <input matInput name="subgrupo" placeholder="subgrupo" [formControl]="clienteForm.controls[' subgrupo ']">
+      </mat-form-field> 
+    <div>
+      <button mat-button [type]="submit" [disabled]="clienteForm.invalid">Save</button>
+      <span></span>
+      <button mat-button color="warn" type="button" (click)="dialogRef.close(false)">Cancel</button>
+    </div>
+  </div>
+  </form>

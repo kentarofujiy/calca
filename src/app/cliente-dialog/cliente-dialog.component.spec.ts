@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TarifaTableComponent } from './tarifa-table.component';
+import { ClienteDialogComponent } from './cliente-dialog.component';
 
-describe('TarifaTableComponent', () => {
-  let component: TarifaTableComponent;
-  let fixture: ComponentFixture<TarifaTableComponent>;
+describe('ClienteDialogComponent', () => {
+  let component: ClienteDialogComponent;
+  let fixture: ComponentFixture<ClienteDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TarifaTableComponent ]
+      declarations: [ ClienteDialogComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TarifaTableComponent);
+    fixture = TestBed.createComponent(ClienteDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

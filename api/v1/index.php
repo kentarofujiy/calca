@@ -91,6 +91,44 @@ $app->delete('/tarifas/:id', function($id) {
     echoResponse(200, $rows);
 });
 
+
+
+// Clientes
+$app->get('/clientes', function() { 
+    global $db;
+    $rows = $db->select("clientes","id,razao,cnpj,cidade,estado,grupo,classe,modalidade,potencia,horasprodutivasduteis,horasprodutivassabados,horasprodutivasdomingos,posto,subgrupo",array());
+    echoResponse(200, $rows);
+});
+
+$app->post('/clientes', function() use ($app) { 
+    $data = json_decode($app->request->getBody());
+    $mandatory = array('name');
+    global $db;
+    $rows = $db->insert("clientes", $data, $mandatory);
+    if($rows["status"]=="success")
+        $rows["message"] = "Tarifa added successfully.";
+    echoResponse(200, $rows);
+});
+
+$app->put('/clientes/:id', function($id) use ($app) { 
+    $data = json_decode($app->request->getBody());
+    $condition = array('id'=>$id);
+    $mandatory = array();
+    global $db;
+    $rows = $db->update("clientes", $data, $condition, $mandatory);
+    if($rows["status"]=="success")
+        $rows["message"] = "Tarifa information updated successfully.";
+    echoResponse(200, $rows);
+});
+
+$app->delete('/clientes/:id', function($id) { 
+    global $db;
+    $rows = $db->delete("clientes", array('id'=>$id));
+    if($rows["status"]=="success")
+        $rows["message"] = "Tarifa removed successfully.";
+    echoResponse(200, $rows);
+});
+
 function echoResponse($status_code, $response) {
     global $app;
     $app->status($status_code);

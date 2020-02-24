@@ -1,0 +1,380 @@
+  tusdkwhpontaazul
+  tusdkwhpontaverde
+  tusdkwhpontames
+  tusdkwhpontatarifavigente
+  tusdkwhfpontaazul
+  tusdkwhfpontaverde
+  tusdkwhfpontames
+  tusdkwhfpontatarifavigente
+  tekwhpontaazul
+  tekwhpontaverde
+  tekwhpontames
+  tekwhpontatarifavigente
+  tekwhfpontaazul
+  tekwhfpontaverde
+  tekwhfpontames
+  tekwhfpontatarifavigente
+  energiaatvinjfpontatusdazul
+  energiaatvinjfpontatusdverde
+  energiaatvinjfpontatusdmes
+  energiaatvinjfpontatusdtarifavigente
+  energiaatvinjfpontateazul
+  energiaatvinjfpontateverde
+  energiaatvinjfpontatemes
+  energiaatvinjfpontatetarifavigente
+  kwhtepontaazul
+  kwhtepontaverde
+  kwhtepontames
+  kwhtepontatarifavigente
+  kwhtefpontaazul
+  kwhtefpontaverde
+  kwhtefpontames
+  kwhtefpontatarifavigente
+  kwhpontaazul
+  kwhpontaverde
+  kwhpontames
+  kwhpontatarifavigente
+  kwhfpontaazul
+  kwhfpontaverde
+  kwhfpontames
+  kwhfpontatarifavigente
+  kwhpontanaoconsumidaazul
+  kwhpontanaoconsumidaverde
+  kwhpontanaoconsumidames
+  kwhpontanaoconsumidatarifavigente
+  exedentekwhpontaazul
+  exedentekwhpontaverde
+  exedentekwhpontames
+  exedentekwhpontatarifavigente
+  exedentekwhfpontaazul
+  exedentekwhfpontaverde
+  exedentekwhfpontames
+  exedentekwhfpontatarifavigente
+  kwhfpontanaoconsumidaazul
+  kwhfpontanaoconsumidaverde
+  kwhfpontanaoconsumidames
+  kwhfpontanaoconsumidatarifavigente
+  kwhrexcedente
+  adicionalbandaamarelaponta
+  adicionalbandaamarelafponta
+  contribuicaocusteioipcipmunicipal
+  consumotusdkwhpontaazul
+  consumotusdkwhpontaverde
+  consumotusdkwhpontames
+  consumotusdkwhpontatarifavigente
+  consumotusdkwhfpontaazul
+  consumotusdkwhfpontaverde
+  consumotusdkwhfpontames
+  consumotusdkwhfpontatarifavigente
+  consumotekwhpontaazul
+  consumotekwhpontaverde
+  consumotekwhpontames
+  consumotekwhpontatarifavigente
+  consumotekwhfpontaazul
+  consumotekwhfpontaverde
+  consumotekwhfpontames
+  consumotekwhfpontatarifavigente
+  consumoreativoexcedentepontaazul
+  consumoreativoexcedentepontaverde
+  consumoreativoexcedentepontames
+  consumoreativoexcedentepontatarifavigente
+  consumoreativoexcedentefpontaazul
+  consumoreativoexcedentefpontaverde
+  consumoreativoexcedentefpontames
+  consumoreativoexcedentefpontatarifavigente
+  consumoadicionalbandeiraspontaazul
+  consumoadicionalbandeiraspontaverde
+  consumoadicionalbandeiraspontames
+  consumoadicionalbandeiraspontatarifavigente
+  consumoadicionalbandeirasfpontaazul
+  consumoadicionalbandeirasfpontaverde
+  consumoadicionalbandeirasfpontames
+  consumoadicionalbandeirasfpontatarifavigente
+  consumodemandareativaexcedentetusdpontaazul
+  consumodemandareativaexcedentetusdpontaverde
+  consumodemandareativaexcedentetusdpontames
+  consumodemandareativaexcedentetusdpontatarifavigente
+  consumodemandareativaexcedentetusdfpontaazul
+  consumodemandareativaexcedentetusdfpontaverde
+  consumodemandareativaexcedentetusdfpontames
+  consumodemandareativaexcedentetusdfpontatarifavigente
+  consumodemandaregistradakwhtusdpontaazul
+  consumodemandaregistradakwhtusdpontaverde
+  consumodemandaregistradakwhtusdpontames
+  consumodemandaregistradakwhtusdpontatarifavigente
+  consumodemandanaoconsumidapontaazul
+  consumodemandanaoconsumidapontaverde
+  consumodemandanaoconsumidapontames
+  consumodemandanaoconsumidapontatarifavigente
+  consumodemandacontratadapontaazul
+  consumodemandacontratadapontaverde
+  consumodemandacontratadapontames
+  consumodemandacontratadapontatarifavigente
+  consumodemandaultrapassagempontaazul
+  consumodemandaultrapassagempontaverde
+  consumodemandaultrapassagempontames
+  consumodemandaultrapassagempontatarifavigente
+  consumodemandaregistradakwhtusdfpontaazul
+  consumodemandaregistradakwhtusdfpontaverde
+  consumodemandaregistradakwhtusdfpontames
+  consumodemandaregistradakwhtusdfpontatarifavigente
+  consumodemandanaoconsumidafpontaazul
+  consumodemandanaoconsumidafpontaverde
+  consumodemandanaoconsumidafpontames
+  consumodemandanaoconsumidafpontatarifavigente
+  consumodemandacontratadafpontaazul
+  consumodemandacontratadafpontaverde
+  consumodemandacontratadafpontames
+  consumodemandacontratadafpontatarifavigente
+  consumodemandaultrapassagemfpontaazul
+  consumodemandaultrapassagemfpontaverde
+  consumodemandaultrapassagemfpontames
+  consumodemandaultrapassagemfpontatarifavigente
+  devecazul
+  devecverde
+  devecmes
+  devectarifavigente
+  subvencaotributariaazul
+  subvencaotributariaverde
+  subvencaotributariames
+  subvencaotributariatarifavigente
+  outrastaxaseimpostosazul
+  outrastaxaseimpostosverde
+  outrastaxaseimpostosmes
+  outrastaxaseimpostostarifavigente
+  energiativainjetadatusdfpontaazul
+  energiativainjetadatusdfpontaverde
+  energiativainjetadatusdfpontames
+  energiativainjetadatusdfpontatarifavigente
+  energiativainjetadatefpontaazul
+  energiativainjetadatefpontaverde
+  energiativainjetadatefpontames
+  energiativainjetadatefpontatarifavigente
+  resultadosemfotovoltaicoazul
+  resultadosemfotovoltaicoverde
+  resultadosemfotovoltaicomes
+  resultadosemfotovoltaicotarifavigente
+  resultadocomfotovoltaicoazul
+  resultadocomfotovoltaicoverde
+  resultadocomfotovoltaicomes
+  resultadocomfotovoltaicotarifavigente
+  valorfaturames
+  cfemes 
+  fpmes
+  valorfaturatotal
+  consumoregistradopontames
+  consumoregistradopontamesdemanda
+  consumoregistradopontameshoras
+  consumoregistradopontamesdias
+  consumoregistradopontamesconsumo
+  consumoregistradofpontames
+  consumoregistradofpontamesdemanda
+  consumoregistradofpontameshoras
+  consumoregistradofpontamesdias
+  consumoregistradofpontamesconsumo
+
+
+
+  
+
+
+
+
+    id
+    razao
+	cnpj
+	cidade
+	estado
+	grupo
+	classe
+	modalidade
+	potencia
+	horasprodutivasduteis
+	horasprodutivassabados
+	horasprodutivasdomingos
+	posto
+	subgrupo
+
+
+    "id"
+    "razao"
+	"cnpj"
+	"cidade"
+	"estado"
+	"grupo"
+	"classe"
+	"modalidade"
+	"potencia"
+	"horasprodutivasduteis"
+	"horasprodutivassabados"
+	"horasprodutivasdomingos"
+	"posto"
+	"subgrupo"
+
+    id: number;
+    razao: string;
+	cnpj: string;
+	cidade: string;
+	estado: string;
+	grupo: string;
+	classe: string;
+	modalidade: string;
+	potencia: string;
+	horasprodutivasduteis: string;
+	horasprodutivassabados: string;
+	horasprodutivasdomingos: string;
+	posto: string;
+	subgrupo: string;
+
+    'id', 'razao', 'cnpj', 'cidade', 'estado', 'grupo', 'classe', 'modalidade', 'potencia',	'horasprodutivasduteis', 'horasprodutivassabados', 'horasprodutivasdomingos', 'posto', 'subgrupo'
+    
+    
+    id: [cliente.id || ''],
+    razao: [cliente.   razao || ''],
+	cnpj: [cliente.cnpj || ''],
+	cidade: [cliente.cidade || ''],
+	estado: [cliente.estado || ''],
+	grupo: [cliente.grupo || ''],
+	classe: [cliente.classe || ''],
+	modalidade: [cliente.modalidade || ''],
+	potencia: [cliente.potencia || ''],
+	horasprodutivasduteis: [cliente.horasprodutivasduteis || ''],
+	horasprodutivassabados: [cliente.horasprodutivassabados || ''],
+	horasprodutivasdomingos: [cliente.horasprodutivasdomingos || ''],
+	posto: [cliente.posto || ''],
+	subgrupo: [cliente.subgrupo || ''],
+
+
+
+    "id",    "razao",	"cnpj",	"cidade",	"estado",	"grupo",	"classe",	"modalidade",	"potencia",	"horasprodutivasduteis",	"horasprodutivassabados",	"horasprodutivasdomingos",	"posto",	"subgrupo",
+
+
+<ng-container matColumnDef="id">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+id
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.id }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="razao">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+razao
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.razao }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="cnpj">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+cnpj
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.cnpj }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="cidade">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+cidade
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.cidade }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="estado">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+estado
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.estado }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="grupo">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+grupo
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.grupo }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="classe">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+classe
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.classe }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="modalidade">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+modalidade
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.modalidade }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="potencia">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+potencia
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.potencia }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="horasprodutivasduteis">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+horasprodutivasduteis
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.horasprodutivasduteis }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="horasprodutivassabados">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+horasprodutivassabados
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.horasprodutivassabados }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="horasprodutivasdomingos">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+horasprodutivasdomingos
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.horasprodutivasdomingos }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="posto">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+posto
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.posto }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="subgrupo">
+<mat-header-cell *matHeaderCellDef mat-sort-header>
+subgrupo
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{row.subgrupo }}
+</mat-cell>
+</ng-container> 
+
+
+<mat-form-field class="full-width">
+<input matInput name="id" placeholder="id" [formControl]="clienteForm.controls[' id ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="razao" placeholder="razao" [formControl]="clienteForm.controls[' razao ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="cnpj" placeholder="cnpj" [formControl]="clienteForm.controls[' cnpj ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="cidade" placeholder="cidade" [formControl]="clienteForm.controls[' cidade ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="estado" placeholder="estado" [formControl]="clienteForm.controls[' estado ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="grupo" placeholder="grupo" [formControl]="clienteForm.controls[' grupo ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="classe" placeholder="classe" [formControl]="clienteForm.controls[' classe ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="modalidade" placeholder="modalidade" [formControl]="clienteForm.controls[' modalidade ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="potencia" placeholder="potencia" [formControl]="clienteForm.controls[' potencia ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="horasprodutivasduteis" placeholder="horasprodutivasduteis" [formControl]="clienteForm.controls[' horasprodutivasduteis ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="horasprodutivassabados" placeholder="horasprodutivassabados" [formControl]="clienteForm.controls[' horasprodutivassabados ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="horasprodutivasdomingos" placeholder="horasprodutivasdomingos" [formControl]="clienteForm.controls[' horasprodutivasdomingos ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="posto" placeholder="posto" [formControl]="clienteForm.controls[' posto ']">
+</mat-form-field> mat-form-field class="full-width">
+<input matInput name="subgrupo" placeholder="subgrupo" [formControl]="clienteForm.controls[' subgrupo ']">
+</mat-form-field> 

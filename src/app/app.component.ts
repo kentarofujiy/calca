@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 // models
 import { Product } from './product';
 import { Tarifa } from './tarifa';
+import { Cliente } from './cliente';
 // services
 import { ProductDataService} from './product-data.service';
 

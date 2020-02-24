@@ -14,11 +14,15 @@ import { TarifaTableComponent } from './tarifa-table/tarifa-table.component';
 import { TarifaDialogComponent } from './tarifa-dialog/tarifa-dialog.component';
 import { TarifaDeleteDialogComponent } from './tarifa-delete-dialog/tarifa-delete-dialog.component';
 
+import { ClienteTableComponent } from './cliente-table/cliente-table.component';
+import { ClienteDialogComponent } from './cliente-dialog/cliente-dialog.component';
+import { ClienteDeleteDialogComponent } from './cliente-delete-dialog/cliente-delete-dialog.component';
 
 
 //  data services
 import { ProductDataService } from './product-data.service';
 import { TarifaDataService } from './tarifa-data.service';
+import { ClienteDataService } from './cliente-data.service';
 
 // general services
 import { ApiService } from './api.service';
@@ -58,6 +62,10 @@ const routes:Routes = [
   { 
     path: 'tarifastable',
     component: TarifaTableComponent
+  },
+  { 
+    path: 'clientestable',
+    component: ClienteTableComponent
   }
 ]
 
@@ -70,7 +78,10 @@ const routes:Routes = [
     ProductDeleteDialogComponent,
     TarifaTableComponent,
     TarifaDialogComponent,
-    TarifaDeleteDialogComponent    
+    TarifaDeleteDialogComponent,
+    ClienteTableComponent,
+    ClienteDialogComponent,
+    ClienteDeleteDialogComponent      
   ],
   imports: [
     BrowserModule,
@@ -107,6 +118,7 @@ const routes:Routes = [
   providers: [
     ProductDataService,
     TarifaDataService,
+    ClienteDataService,
      ApiService,
   ],
   bootstrap: [AppComponent]

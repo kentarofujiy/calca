@@ -3,6 +3,7 @@ import { environment } from '../environments/environment';
 import { Http, Response } from '@angular/http';
 import { Product } from './product';
 import { Tarifa } from './tarifa';
+import { Cliente } from './cliente';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -132,6 +133,63 @@ export class ApiService {
     .map(response => null)
     .catch(this.handleError);
   }
+
+    // API: GET /clientes
+    public getAllClientes(): Observable<Cliente[]> {
+      return this.http
+        .get(API_URL + '/clientes')
+          //.get('/api/v1/clientes')
+        .map(response => {
+          const clientes = response.json().data;
+          console.log(response.json().data);
+          return clientes.map((cliente) => new Cliente(cliente));
+        })
+        .catch(this.handleError);
+    }
+  
+    // API: POST /clientes
+    public createCliente(cliente: Cliente): Observable<Cliente> {
+      return this.http
+      .post(API_URL + '/clientes', cliente)
+      //.post('/api/v1/clientes', cliente)
+      .map(response => {
+        cliente.id = response.json().data;
+        return new Cliente(cliente);
+      })
+      .catch(this.handleError);
+    }
+  
+    // API: GET /clientes/:id
+    public getClienteById(clienteId: number): Observable<Cliente> {
+      return this.http
+      .get(API_URL + '/clientes/' + clienteId)
+      // .get('/api/v1/clientes/' + clienteId)
+      .map(response => {
+        return new Cliente(response.json());
+      })
+      .catch(this.handleError);
+    }
+  
+    // API: PUT /clientes/:id
+    public updateCliente(id: number, cliente: Cliente): Observable<Cliente> {
+      return this.http
+       .put(API_URL + '/clientes/' + cliente.id, cliente)
+      // .put('/api/v1/clientes/' + id, cliente)
+      .map(response => {
+        return new Cliente(cliente);
+      })
+      .catch(this.handleError);
+    }
+  
+    // DELETE /clientes/:id
+    public deleteClienteById(clienteId: number): Observable<null>  {
+      return this.http
+       .delete(API_URL + '/clientes/' + clienteId)
+      // .delete('/api/v1/clientes/' + clienteId)
+      .map(response => null)
+      .catch(this.handleError);
+    }
+  
 
   private handleError (error: Response | any) {
     console.error('ApiService::handleError', error);
