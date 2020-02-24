@@ -166,6 +166,42 @@ $app->delete('/lancamentos/:id', function($id) {
 });
 
 
+// Cenarios
+$app->get('/cenarios', function() { 
+    global $db;
+    $rows = $db->select("cenarios","id,lancamento,consumoponta,consumofponta,consumointerm",array());
+    echoResponse(200, $rows);
+});
+
+$app->post('/cenarios', function() use ($app) { 
+    $data = json_decode($app->request->getBody());
+    $mandatory = array('name');
+    global $db;
+    $rows = $db->insert("cenarios", $data, $mandatory);
+    if($rows["status"]=="success")
+        $rows["message"] = "Cenario added successfully.";
+    echoResponse(200, $rows);
+});
+
+$app->put('/cenarios/:id', function($id) use ($app) { 
+    $data = json_decode($app->request->getBody());
+    $condition = array('id'=>$id);
+    $mandatory = array();
+    global $db;
+    $rows = $db->update("cenarios", $data, $condition, $mandatory);
+    if($rows["status"]=="success")
+        $rows["message"] = "Cenario information updated successfully.";
+    echoResponse(200, $rows);
+});
+
+$app->delete('/cenarios/:id', function($id) { 
+    global $db;
+    $rows = $db->delete("cenarios", array('id'=>$id));
+    if($rows["status"]=="success")
+        $rows["message"] = "Cenario removed successfully.";
+    echoResponse(200, $rows);
+});
+
 function echoResponse($status_code, $response) {
     global $app;
     $app->status($status_code);

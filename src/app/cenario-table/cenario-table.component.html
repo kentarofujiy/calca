@@ -1,0 +1,83 @@
+<div class="container mat-elevation-z8">
+
+  <div class="form">
+    <mat-form-field floatPlaceholder="never" color="accent">
+      <input matInput #filter (keyup)="applyFilter($event.target.value)" placeholder="Filter cenarios">
+    </mat-form-field>
+  </div>
+
+  <mat-table #table [dataSource]="dataSource" matSort class="mat-cell">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+          <ng-container matColumnDef="id">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> id
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.id }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="lancamento">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> lancamento
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.lancamento }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="consumoponta">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> consumoponta
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.consumoponta }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="consumofponta">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> consumofponta
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.consumofponta }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="consumointerm">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> consumointerm
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.consumointerm }}
+            </mat-cell>
+            </ng-container> 
+
+
+
+
+
+
+    <!-- actions -->
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>
+        <button mat-icon-button color="primary" (click)="editItem({}, true)">
+          <mat-icon aria-label="Example icon-button with a heart icon">add</mat-icon>
+        </button>
+      </mat-header-cell>
+
+      <mat-cell *matCellDef="let row;">
+        <button mat-icon-button color="primary" (click)="editItem(row)">
+          <mat-icon aria-label="Edit">edit</mat-icon>
+        </button>
+
+        <button mat-icon-button color="warn" (click)="deleteItem(row)">
+          <mat-icon aria-label="Delete">delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+
+  <div class="no-results" [style.display]="dataSource?.length == 0 ? '' : 'none'">
+    No results
+  </div>
+
+  <mat-paginator #paginator
+                 [pageIndex]="0"
+                 [pageSize]="10"
+                 [pageSizeOptions]="[5, 10, 25, 50, 100]">
+  </mat-paginator>
+</div>

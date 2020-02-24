@@ -4,6 +4,7 @@ import { Http, Response } from '@angular/http';
 import { Product } from './product';
 import { Tarifa } from './tarifa';
 import { Cliente } from './cliente';
+import { Cenario } from './cenario';
 import { Lancamento } from './lancamento';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
@@ -244,6 +245,64 @@ export class ApiService {
       return this.http
        .delete(API_URL + '/lancamentos/' + lancamentoId)
       // .delete('/api/v1/lancamentos/' + lancamentoId)
+      .map(response => null)
+      .catch(this.handleError);
+    }
+
+
+    
+      // API: GET /cenarios
+      public getAllCenarios(): Observable<Cenario[]> {
+        return this.http
+          .get(API_URL + '/cenarios')
+            //.get('/api/v1/cenarios')
+          .map(response => {
+            const cenarios = response.json().data;
+            console.log(response.json().data);
+            return cenarios.map((cenario) => new Cenario(cenario));
+          })
+          .catch(this.handleError);
+      }
+    
+      // API: POST /cenarios
+      public createCenario(cenario: Cenario): Observable<Cenario> {
+        return this.http
+        .post(API_URL + '/cenarios', cenario)
+        //.post('/api/v1/cenarios', cenario)
+        .map(response => {
+          cenario.id = response.json().data;
+          return new Cenario(cenario);
+        })
+        .catch(this.handleError);
+      }
+  
+    // API: GET /cenarios/:id
+    public getCenarioById(cenarioId: number): Observable<Cenario> {
+      return this.http
+      .get(API_URL + '/cenarios/' + cenarioId)
+      // .get('/api/v1/cenarios/' + cenarioId)
+      .map(response => {
+        return new Cenario(response.json());
+      })
+      .catch(this.handleError);
+    }
+  
+    // API: PUT /cenarios/:id
+    public updateCenario(id: number, cenario: Cenario): Observable<Cenario> {
+      return this.http
+       .put(API_URL + '/cenarios/' + cenario.id, cenario)
+      // .put('/api/v1/cenarios/' + id, cenario)
+      .map(response => {
+        return new Cenario(cenario);
+      })
+      .catch(this.handleError);
+    }
+  
+    // DELETE /cenarios/:id
+    public deleteCenarioById(cenarioId: number): Observable<null>  {
+      return this.http
+       .delete(API_URL + '/cenarios/' + cenarioId)
+      // .delete('/api/v1/cenarios/' + cenarioId)
       .map(response => null)
       .catch(this.handleError);
     }
