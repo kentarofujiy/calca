@@ -18,11 +18,19 @@ import { ClienteTableComponent } from './cliente-table/cliente-table.component';
 import { ClienteDialogComponent } from './cliente-dialog/cliente-dialog.component';
 import { ClienteDeleteDialogComponent } from './cliente-delete-dialog/cliente-delete-dialog.component';
 
+import { LancamentoTableComponent } from './lancamento-table/lancamento-table.component';
+import { LancamentoDialogComponent } from './lancamento-dialog/lancamento-dialog.component';
+import { LancamentoDeleteDialogComponent } from './lancamento-delete-dialog/lancamento-delete-dialog.component';
+
+  
+
+
 
 //  data services
 import { ProductDataService } from './product-data.service';
 import { TarifaDataService } from './tarifa-data.service';
 import { ClienteDataService } from './cliente-data.service';
+import { LancamentoDataService } from './lancamento-data.service';
 
 // general services
 import { ApiService } from './api.service';
@@ -66,6 +74,10 @@ const routes:Routes = [
   { 
     path: 'clientestable',
     component: ClienteTableComponent
+  },
+  { 
+    path: 'lancamentostable',
+    component: LancamentoTableComponent
   }
 ]
 
@@ -81,7 +93,10 @@ const routes:Routes = [
     TarifaDeleteDialogComponent,
     ClienteTableComponent,
     ClienteDialogComponent,
-    ClienteDeleteDialogComponent      
+    ClienteDeleteDialogComponent,
+    LancamentoTableComponent,
+    LancamentoDialogComponent,
+    LancamentoDeleteDialogComponent      
   ],
   imports: [
     BrowserModule,
@@ -119,6 +134,7 @@ const routes:Routes = [
     ProductDataService,
     TarifaDataService,
     ClienteDataService,
+    LancamentoDataService,
      ApiService,
   ],
   bootstrap: [AppComponent]

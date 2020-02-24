@@ -4,6 +4,7 @@ import { Http, Response } from '@angular/http';
 import { Product } from './product';
 import { Tarifa } from './tarifa';
 import { Cliente } from './cliente';
+import { Lancamento } from './lancamento';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -186,6 +187,63 @@ export class ApiService {
       return this.http
        .delete(API_URL + '/clientes/' + clienteId)
       // .delete('/api/v1/clientes/' + clienteId)
+      .map(response => null)
+      .catch(this.handleError);
+    }
+
+
+      // API: GET /lancamentos
+      public getAllLancamentos(): Observable<Lancamento[]> {
+        return this.http
+          .get(API_URL + '/lancamentos')
+            //.get('/api/v1/lancamentos')
+          .map(response => {
+            const lancamentos = response.json().data;
+            console.log(response.json().data);
+            return lancamentos.map((lancamento) => new Lancamento(lancamento));
+          })
+          .catch(this.handleError);
+      }
+    
+      // API: POST /lancamentos
+      public createLancamento(lancamento: Lancamento): Observable<Lancamento> {
+        return this.http
+        .post(API_URL + '/lancamentos', lancamento)
+        //.post('/api/v1/lancamentos', lancamento)
+        .map(response => {
+          lancamento.id = response.json().data;
+          return new Lancamento(lancamento);
+        })
+        .catch(this.handleError);
+      }
+  
+    // API: GET /lancamentos/:id
+    public getLancamentoById(lancamentoId: number): Observable<Lancamento> {
+      return this.http
+      .get(API_URL + '/lancamentos/' + lancamentoId)
+      // .get('/api/v1/lancamentos/' + lancamentoId)
+      .map(response => {
+        return new Lancamento(response.json());
+      })
+      .catch(this.handleError);
+    }
+  
+    // API: PUT /lancamentos/:id
+    public updateLancamento(id: number, lancamento: Lancamento): Observable<Lancamento> {
+      return this.http
+       .put(API_URL + '/lancamentos/' + lancamento.id, lancamento)
+      // .put('/api/v1/lancamentos/' + id, lancamento)
+      .map(response => {
+        return new Lancamento(lancamento);
+      })
+      .catch(this.handleError);
+    }
+  
+    // DELETE /lancamentos/:id
+    public deleteLancamentoById(lancamentoId: number): Observable<null>  {
+      return this.http
+       .delete(API_URL + '/lancamentos/' + lancamentoId)
+      // .delete('/api/v1/lancamentos/' + lancamentoId)
       .map(response => null)
       .catch(this.handleError);
     }

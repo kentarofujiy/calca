@@ -1,0 +1,233 @@
+<div class="container mat-elevation-z8">
+
+  <div class="form">
+    <mat-form-field floatPlaceholder="never" color="accent">
+      <input matInput #filter (keyup)="applyFilter($event.target.value)" placeholder="Filter lancamentos">
+    </mat-form-field>
+  </div>
+
+  <mat-table #table [dataSource]="dataSource" matSort class="mat-cell">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+          <ng-container matColumnDef="id">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> id
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.id }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="dist">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> dist
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.dist }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="razao">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> razao
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.razao }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="cnpj">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> cnpj
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.cnpj }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="login">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> login
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.login }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="data">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> data
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.data }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="grupo">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> grupo
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.grupo }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="consumointerm">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> consumointerm
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.consumointerm }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="consumofponta">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> consumofponta
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.consumofponta }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="custoponta">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> custoponta
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.custoponta }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="custofponta">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> custofponta
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.custofponta }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="custointerm">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> custointerm
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.custointerm }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="idcliente">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> idcliente
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.idcliente }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="mes">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> mes
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.mes }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="ano">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> ano
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.ano }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="tstributo">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> tstributo
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.tstributo }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="tctributo">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> tctributo
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.tctributo }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="status">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> status
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.status }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="consumoponta">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> consumoponta
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.consumoponta }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="potencia">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> potencia
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.potencia }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="consumotusd">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> consumotusd
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.consumotusd }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="consumote">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> consumote
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.consumote }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="consumooutros">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> consumooutros
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.consumooutros }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="custobponta">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> custobponta
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.custobponta }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="custobfponta">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> custobfponta
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.custobfponta }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="custobinterm">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> custobinterm
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.custobinterm }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="soma">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> soma
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.soma }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="totalctributosbponta">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> totalctributosbponta
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.totalctributosbponta }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="totalctributosbfponta">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> totalctributosbfponta
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.totalctributosbfponta }}
+            </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="totalctributosbinterm">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> totalctributosbinterm
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.totalctributosbinterm }}
+            </mat-cell>
+            </ng-container>
+
+
+
+
+
+
+    <!-- actions -->
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>
+        <button mat-icon-button color="primary" (click)="editItem({}, true)">
+          <mat-icon aria-label="Example icon-button with a heart icon">add</mat-icon>
+        </button>
+      </mat-header-cell>
+
+      <mat-cell *matCellDef="let row;">
+        <button mat-icon-button color="primary" (click)="editItem(row)">
+          <mat-icon aria-label="Edit">edit</mat-icon>
+        </button>
+
+        <button mat-icon-button color="warn" (click)="deleteItem(row)">
+          <mat-icon aria-label="Delete">delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+
+  <div class="no-results" [style.display]="dataSource?.length == 0 ? '' : 'none'">
+    No results
+  </div>
+
+  <mat-paginator #paginator
+                 [pageIndex]="0"
+                 [pageSize]="10"
+                 [pageSizeOptions]="[5, 10, 25, 50, 100]">
+  </mat-paginator>
+</div>

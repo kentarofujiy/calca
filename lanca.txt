@@ -1,0 +1,379 @@
+
+    id
+    dist
+    razao
+    cnpj
+    login
+    data
+    grupo
+    consumointerm
+    consumofponta
+    custoponta
+    custofponta
+    custointerm
+    idcliente
+    mes
+    ano
+    tstributo
+    tctributo
+    status
+    consumoponta
+    potencia
+    consumotusd
+    consumote
+    consumooutros
+    custobponta
+    custobfponta
+    custobinterm
+    soma
+    totalctributosbponta
+    totalctributosbfponta
+    totalctributosbinterm
+
+
+
+
+    
+    "id,dist,razao,cnpj,login,data,grupo,consumointerm,consumofponta,custoponta,custofponta,custointerm,idcliente,mes,ano,tstributo,tctributo,status,consumoponta,potencia,consumotusd,consumote,consumooutros,custobponta,custobfponta,custobinterm,soma,totalctributosbponta,totalctributosbfponta,totalctributosbinterm"
+
+
+    id: number;
+    dist: string;
+    razao: string;
+    cnpj: string;
+    login: string;
+    data: string;
+    grupo: string;
+    consumointerm: string;
+    consumofponta: string;
+    custoponta: string;
+    custofponta: string;
+    custointerm: string;
+    idcliente: string;
+    mes: string;
+    ano: string;
+    tstributo: string;
+    tctributo: string;
+    status: string;
+    consumoponta: string;
+    potencia: string;
+    consumotusd: string;
+    consumote: string;
+    consumooutros: string;
+    custobponta: string;
+    custobfponta: string;
+    custobinterm: string;
+    soma: string;
+    totalctributosbponta: string;
+    totalctributosbfponta: string;
+    totalctributosbinterm: string;
+    
+
+  id: [lancamento.id || '' ],
+    dist: [lancamento.dist || '' ],
+    razao: [lancamento.razao || '' ],
+    cnpj: [lancamento.cnpj || '' ],
+    login: [lancamento.login || '' ],
+    data: [lancamento.data || '' ],
+    grupo: [lancamento.grupo || '' ],
+    consumointerm: [lancamento.consumointerm || '' ],
+    consumofponta: [lancamento.consumofponta || '' ],
+    custoponta: [lancamento.custoponta || '' ],
+    custofponta: [lancamento.custofponta || '' ],
+    custointerm: [lancamento.custointerm || '' ],
+    idcliente: [lancamento.idcliente || '' ],
+    mes: [lancamento.mes || '' ],
+    ano: [lancamento.ano || '' ],
+    tstributo: [lancamento.tstributo || '' ],
+    tctributo: [lancamento.tctributo || '' ],
+    status: [lancamento.status || '' ],
+    consumoponta: [lancamento.consumoponta || '' ],
+    potencia: [lancamento.potencia || '' ],
+    consumotusd: [lancamento.consumotusd || '' ],
+    consumote: [lancamento.consumote || '' ],
+    consumooutros: [lancamento.consumooutros || '' ],
+    custobponta: [lancamento.custobponta || '' ],
+    custobfponta: [lancamento.custobfponta || '' ],
+    custobinterm: [lancamento.custobinterm || '' ],
+    soma: [lancamento.soma || '' ],
+    totalctributosbponta: [lancamento.totalctributosbponta || '' ],
+    totalctributosbfponta: [lancamento.totalctributosbfponta || '' ],
+    totalctributosbinterm: [lancamento.totalctributosbinterm || '' ],
+
+
+'id','dist','razao','cnpj','login','data','grupo','consumointerm','consumofponta','custoponta','custofponta','custointerm','idcliente','mes','ano','tstributo','tctributo','status','consumoponta','potencia','consumotusd','consumote','consumooutros','custobponta','custobfponta','custobinterm','soma','totalctributosbponta','totalctributosbfponta','totalctributosbinterm',
+
+
+<ng-container matColumnDef="id">
+<mat-header-cell *matHeaderCellDef mat-sort-header> id
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.id }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="dist">
+<mat-header-cell *matHeaderCellDef mat-sort-header> dist
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.dist }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="razao">
+<mat-header-cell *matHeaderCellDef mat-sort-header> razao
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.razao }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="cnpj">
+<mat-header-cell *matHeaderCellDef mat-sort-header> cnpj
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.cnpj }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="login">
+<mat-header-cell *matHeaderCellDef mat-sort-header> login
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.login }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="data">
+<mat-header-cell *matHeaderCellDef mat-sort-header> data
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.data }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="grupo">
+<mat-header-cell *matHeaderCellDef mat-sort-header> grupo
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.grupo }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="consumointerm">
+<mat-header-cell *matHeaderCellDef mat-sort-header> consumointerm
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.consumointerm }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="consumofponta">
+<mat-header-cell *matHeaderCellDef mat-sort-header> consumofponta
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.consumofponta }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="custoponta">
+<mat-header-cell *matHeaderCellDef mat-sort-header> custoponta
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.custoponta }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="custofponta">
+<mat-header-cell *matHeaderCellDef mat-sort-header> custofponta
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.custofponta }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="custointerm">
+<mat-header-cell *matHeaderCellDef mat-sort-header> custointerm
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.custointerm }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="idcliente">
+<mat-header-cell *matHeaderCellDef mat-sort-header> idcliente
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.idcliente }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="mes">
+<mat-header-cell *matHeaderCellDef mat-sort-header> mes
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.mes }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="ano">
+<mat-header-cell *matHeaderCellDef mat-sort-header> ano
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.ano }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="tstributo">
+<mat-header-cell *matHeaderCellDef mat-sort-header> tstributo
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.tstributo }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="tctributo">
+<mat-header-cell *matHeaderCellDef mat-sort-header> tctributo
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.tctributo }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="status">
+<mat-header-cell *matHeaderCellDef mat-sort-header> status
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.status }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="consumoponta">
+<mat-header-cell *matHeaderCellDef mat-sort-header> consumoponta
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.consumoponta }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="potencia">
+<mat-header-cell *matHeaderCellDef mat-sort-header> potencia
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.potencia }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="consumotusd">
+<mat-header-cell *matHeaderCellDef mat-sort-header> consumotusd
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.consumotusd }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="consumote">
+<mat-header-cell *matHeaderCellDef mat-sort-header> consumote
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.consumote }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="consumooutros">
+<mat-header-cell *matHeaderCellDef mat-sort-header> consumooutros
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.consumooutros }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="custobponta">
+<mat-header-cell *matHeaderCellDef mat-sort-header> custobponta
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.custobponta }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="custobfponta">
+<mat-header-cell *matHeaderCellDef mat-sort-header> custobfponta
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.custobfponta }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="custobinterm">
+<mat-header-cell *matHeaderCellDef mat-sort-header> custobinterm
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.custobinterm }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="soma">
+<mat-header-cell *matHeaderCellDef mat-sort-header> soma
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.soma }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="totalctributosbponta">
+<mat-header-cell *matHeaderCellDef mat-sort-header> totalctributosbponta
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.totalctributosbponta }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="totalctributosbfponta">
+<mat-header-cell *matHeaderCellDef mat-sort-header> totalctributosbfponta
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.totalctributosbfponta }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="totalctributosbinterm">
+<mat-header-cell *matHeaderCellDef mat-sort-header> totalctributosbinterm
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.totalctributosbinterm }}
+</mat-cell>
+</ng-container>
+
+
+
+<mat-form-field class="full-width">
+<input matInput name="id" placeholder="id" [formControl]="clienteForm.controls[' id ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="dist" placeholder="dist" [formControl]="clienteForm.controls[' dist ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="razao" placeholder="razao" [formControl]="clienteForm.controls[' razao ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="cnpj" placeholder="cnpj" [formControl]="clienteForm.controls[' cnpj ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="login" placeholder="login" [formControl]="clienteForm.controls[' login ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="data" placeholder="data" [formControl]="clienteForm.controls[' data ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="grupo" placeholder="grupo" [formControl]="clienteForm.controls[' grupo ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="consumointerm" placeholder="consumointerm" [formControl]="clienteForm.controls[' consumointerm ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="consumofponta" placeholder="consumofponta" [formControl]="clienteForm.controls[' consumofponta ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="custoponta" placeholder="custoponta" [formControl]="clienteForm.controls[' custoponta ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="custofponta" placeholder="custofponta" [formControl]="clienteForm.controls[' custofponta ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="custointerm" placeholder="custointerm" [formControl]="clienteForm.controls[' custointerm ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="idcliente" placeholder="idcliente" [formControl]="clienteForm.controls[' idcliente ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="mes" placeholder="mes" [formControl]="clienteForm.controls[' mes ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="ano" placeholder="ano" [formControl]="clienteForm.controls[' ano ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="tstributo" placeholder="tstributo" [formControl]="clienteForm.controls[' tstributo ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="tctributo" placeholder="tctributo" [formControl]="clienteForm.controls[' tctributo ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="status" placeholder="status" [formControl]="clienteForm.controls[' status ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="consumoponta" placeholder="consumoponta" [formControl]="clienteForm.controls[' consumoponta ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="potencia" placeholder="potencia" [formControl]="clienteForm.controls[' potencia ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="consumotusd" placeholder="consumotusd" [formControl]="clienteForm.controls[' consumotusd ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="consumote" placeholder="consumote" [formControl]="clienteForm.controls[' consumote ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="consumooutros" placeholder="consumooutros" [formControl]="clienteForm.controls[' consumooutros ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="custobponta" placeholder="custobponta" [formControl]="clienteForm.controls[' custobponta ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="custobfponta" placeholder="custobfponta" [formControl]="clienteForm.controls[' custobfponta ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="custobinterm" placeholder="custobinterm" [formControl]="clienteForm.controls[' custobinterm ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="soma" placeholder="soma" [formControl]="clienteForm.controls[' soma ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="totalctributosbponta" placeholder="totalctributosbponta" [formControl]="clienteForm.controls[' totalctributosbponta ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="totalctributosbfponta" placeholder="totalctributosbfponta" [formControl]="clienteForm.controls[' totalctributosbfponta ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="totalctributosbinterm" placeholder="totalctributosbinterm" [formControl]="clienteForm.controls[' totalctributosbinterm ']">
+</mat-form-field>

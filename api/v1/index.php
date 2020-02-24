@@ -129,6 +129,43 @@ $app->delete('/clientes/:id', function($id) {
     echoResponse(200, $rows);
 });
 
+// Lancamentos
+$app->get('/lancamentos', function() { 
+    global $db;
+    $rows = $db->select("lancamentos","id,dist,razao,cnpj,login,data,grupo,consumointerm,consumofponta,custoponta,custofponta,custointerm,idcliente,mes,ano,tstributo,tctributo,status,consumoponta,potencia,consumotusd,consumote,consumooutros,custobponta,custobfponta,custobinterm,soma,totalctributosbponta,totalctributosbfponta,totalctributosbinterm",array());
+    echoResponse(200, $rows);
+});
+
+$app->post('/lancamentos', function() use ($app) { 
+    $data = json_decode($app->request->getBody());
+    $mandatory = array('name');
+    global $db;
+    $rows = $db->insert("lancamentos", $data, $mandatory);
+    if($rows["status"]=="success")
+        $rows["message"] = "Lancamento added successfully.";
+    echoResponse(200, $rows);
+});
+
+$app->put('/lancamentos/:id', function($id) use ($app) { 
+    $data = json_decode($app->request->getBody());
+    $condition = array('id'=>$id);
+    $mandatory = array();
+    global $db;
+    $rows = $db->update("lancamentos", $data, $condition, $mandatory);
+    if($rows["status"]=="success")
+        $rows["message"] = "Lancamento information updated successfully.";
+    echoResponse(200, $rows);
+});
+
+$app->delete('/lancamentos/:id', function($id) { 
+    global $db;
+    $rows = $db->delete("lancamentos", array('id'=>$id));
+    if($rows["status"]=="success")
+        $rows["message"] = "Lancamento removed successfully.";
+    echoResponse(200, $rows);
+});
+
+
 function echoResponse($status_code, $response) {
     global $app;
     $app->status($status_code);

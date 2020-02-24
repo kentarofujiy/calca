@@ -1,0 +1,101 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+  <form [formGroup]="lancamentoForm" (ngSubmit)="submit()">
+  <div class="form-container">
+
+    <mat-form-field class="full-width">
+      <input matInput name="id" placeholder="id" [formControl]="clienteForm.controls[' id ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="dist" placeholder="dist" [formControl]="clienteForm.controls[' dist ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="razao" placeholder="razao" [formControl]="clienteForm.controls[' razao ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="cnpj" placeholder="cnpj" [formControl]="clienteForm.controls[' cnpj ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="login" placeholder="login" [formControl]="clienteForm.controls[' login ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="data" placeholder="data" [formControl]="clienteForm.controls[' data ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="grupo" placeholder="grupo" [formControl]="clienteForm.controls[' grupo ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="consumointerm" placeholder="consumointerm" [formControl]="clienteForm.controls[' consumointerm ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="consumofponta" placeholder="consumofponta" [formControl]="clienteForm.controls[' consumofponta ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="custoponta" placeholder="custoponta" [formControl]="clienteForm.controls[' custoponta ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="custofponta" placeholder="custofponta" [formControl]="clienteForm.controls[' custofponta ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="custointerm" placeholder="custointerm" [formControl]="clienteForm.controls[' custointerm ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="idcliente" placeholder="idcliente" [formControl]="clienteForm.controls[' idcliente ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="mes" placeholder="mes" [formControl]="clienteForm.controls[' mes ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="ano" placeholder="ano" [formControl]="clienteForm.controls[' ano ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="tstributo" placeholder="tstributo" [formControl]="clienteForm.controls[' tstributo ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="tctributo" placeholder="tctributo" [formControl]="clienteForm.controls[' tctributo ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="status" placeholder="status" [formControl]="clienteForm.controls[' status ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="consumoponta" placeholder="consumoponta" [formControl]="clienteForm.controls[' consumoponta ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="potencia" placeholder="potencia" [formControl]="clienteForm.controls[' potencia ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="consumotusd" placeholder="consumotusd" [formControl]="clienteForm.controls[' consumotusd ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="consumote" placeholder="consumote" [formControl]="clienteForm.controls[' consumote ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="consumooutros" placeholder="consumooutros" [formControl]="clienteForm.controls[' consumooutros ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="custobponta" placeholder="custobponta" [formControl]="clienteForm.controls[' custobponta ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="custobfponta" placeholder="custobfponta" [formControl]="clienteForm.controls[' custobfponta ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="custobinterm" placeholder="custobinterm" [formControl]="clienteForm.controls[' custobinterm ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="soma" placeholder="soma" [formControl]="clienteForm.controls[' soma ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="totalctributosbponta" placeholder="totalctributosbponta" [formControl]="clienteForm.controls[' totalctributosbponta ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="totalctributosbfponta" placeholder="totalctributosbfponta" [formControl]="clienteForm.controls[' totalctributosbfponta ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="totalctributosbinterm" placeholder="totalctributosbinterm" [formControl]="clienteForm.controls[' totalctributosbinterm ']">
+      </mat-form-field>
+    <div>
+      <button mat-button [type]="submit" [disabled]="lancamentoForm.invalid">Save</button>
+      <span></span>
+      <button mat-button color="warn" type="button" (click)="dialogRef.close(false)">Cancel</button>
+    </div>
+  </div>
+  </form>
