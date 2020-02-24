@@ -1,0 +1,131 @@
+id
+nome
+icms
+subgrupo
+modalidade
+classe
+posto
+tusddemanda
+tusdenergia
+teenergia
+
+
+"id,nome,icms,subgrupo,modalidade,classe,posto,tusddemanda,tusdenergia,teenergia"
+
+'id','nome','icms','subgrupo','modalidade','classe','posto','tusddemanda','tusdenergia','teenergia'
+
+id: number;
+nome: string;
+icms: string;
+subgrupo: string;
+modalidade: string;
+classe: string;
+posto: string;
+tusddemanda: string;
+tusdenergia: string;
+teenergia: string;
+
+id: [distribuidora.id || ''],
+nome: [distribuidora.nome || ''],
+icms: [distribuidora.icms || ''],
+subgrupo: [distribuidora.subgrupo || ''],
+modalidade: [distribuidora.modalidade || ''],
+classe: [distribuidora.classe || ''],
+posto: [distribuidora.posto || ''],
+tusddemanda: [distribuidora.tusddemanda || ''],
+tusdenergia: [distribuidora.tusdenergia || ''],
+teenergia: [distribuidora.teenergia || ''],
+
+
+<ng-container matColumnDef="id">
+<mat-header-cell *matHeaderCellDef mat-sort-header> id
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.id }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="nome">
+<mat-header-cell *matHeaderCellDef mat-sort-header> nome
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.nome }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="icms">
+<mat-header-cell *matHeaderCellDef mat-sort-header> icms
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.icms }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="subgrupo">
+<mat-header-cell *matHeaderCellDef mat-sort-header> subgrupo
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.subgrupo }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="modalidade">
+<mat-header-cell *matHeaderCellDef mat-sort-header> modalidade
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.modalidade }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="classe">
+<mat-header-cell *matHeaderCellDef mat-sort-header> classe
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.classe }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="posto">
+<mat-header-cell *matHeaderCellDef mat-sort-header> posto
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.posto }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="tusddemanda">
+<mat-header-cell *matHeaderCellDef mat-sort-header> tusddemanda
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.tusddemanda }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="tusdenergia">
+<mat-header-cell *matHeaderCellDef mat-sort-header> tusdenergia
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.tusdenergia }}
+</mat-cell>
+</ng-container>
+<ng-container matColumnDef="teenergia">
+<mat-header-cell *matHeaderCellDef mat-sort-header> teenergia
+</mat-header-cell>
+<mat-cell *matCellDef="let row">{{ row.teenergia }}
+</mat-cell>
+</ng-container> 
+
+
+<mat-form-field class="full-width">
+<input matInput name="id" placeholder="id" [formControl]="distribuidoraForm.controls[' id ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="nome" placeholder="nome" [formControl]="distribuidoraForm.controls[' nome ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="icms" placeholder="icms" [formControl]="distribuidoraForm.controls[' icms ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="subgrupo" placeholder="subgrupo" [formControl]="distribuidoraForm.controls[' subgrupo ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="modalidade" placeholder="modalidade" [formControl]="distribuidoraForm.controls[' modalidade ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="classe" placeholder="classe" [formControl]="distribuidoraForm.controls[' classe ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="posto" placeholder="posto" [formControl]="distribuidoraForm.controls[' posto ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="tusddemanda" placeholder="tusddemanda" [formControl]="distribuidoraForm.controls[' tusddemanda ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="tusdenergia" placeholder="tusdenergia" [formControl]="distribuidoraForm.controls[' tusdenergia ']">
+</mat-form-field>
+<mat-form-field class="full-width">
+<input matInput name="teenergia" placeholder="teenergia" [formControl]="distribuidoraForm.controls[' teenergia ']">
+</mat-form-field>

@@ -166,39 +166,39 @@ $app->delete('/lancamentos/:id', function($id) {
 });
 
 
-// Cenarios
-$app->get('/cenarios', function() { 
+// Distribuidoras
+$app->get('/distribuidoras', function() { 
     global $db;
-    $rows = $db->select("cenarios","id,lancamento,consumoponta,consumofponta,consumointerm",array());
+    $rows = $db->select("distribuidoras","id,nome,icms,subgrupo,modalidade,classe,posto,tusddemanda,tusdenergia,teenergia",array());
     echoResponse(200, $rows);
 });
 
-$app->post('/cenarios', function() use ($app) { 
+$app->post('/distribuidoras', function() use ($app) { 
     $data = json_decode($app->request->getBody());
     $mandatory = array('name');
     global $db;
-    $rows = $db->insert("cenarios", $data, $mandatory);
+    $rows = $db->insert("distribuidoras", $data, $mandatory);
     if($rows["status"]=="success")
-        $rows["message"] = "Cenario added successfully.";
+        $rows["message"] = "Distribuidora added successfully.";
     echoResponse(200, $rows);
 });
 
-$app->put('/cenarios/:id', function($id) use ($app) { 
+$app->put('/distribuidoras/:id', function($id) use ($app) { 
     $data = json_decode($app->request->getBody());
     $condition = array('id'=>$id);
     $mandatory = array();
     global $db;
-    $rows = $db->update("cenarios", $data, $condition, $mandatory);
+    $rows = $db->update("distribuidoras", $data, $condition, $mandatory);
     if($rows["status"]=="success")
-        $rows["message"] = "Cenario information updated successfully.";
+        $rows["message"] = "Distribuidora information updated successfully.";
     echoResponse(200, $rows);
 });
 
-$app->delete('/cenarios/:id', function($id) { 
+$app->delete('/distribuidoras/:id', function($id) { 
     global $db;
-    $rows = $db->delete("cenarios", array('id'=>$id));
+    $rows = $db->delete("distribuidoras", array('id'=>$id));
     if($rows["status"]=="success")
-        $rows["message"] = "Cenario removed successfully.";
+        $rows["message"] = "Distribuidora removed successfully.";
     echoResponse(200, $rows);
 });
 

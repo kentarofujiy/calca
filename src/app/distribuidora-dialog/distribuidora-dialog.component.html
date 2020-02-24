@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+  <form [formGroup]="distribuidoraForm" (ngSubmit)="submit()">
+  <div class="form-container">
+
+    <mat-form-field class="full-width">
+      <input matInput name="id" placeholder="id" [formControl]="distribuidoraForm.controls[' id ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="nome" placeholder="nome" [formControl]="distribuidoraForm.controls[' nome ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="icms" placeholder="icms" [formControl]="distribuidoraForm.controls[' icms ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="subgrupo" placeholder="subgrupo" [formControl]="distribuidoraForm.controls[' subgrupo ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="modalidade" placeholder="modalidade" [formControl]="distribuidoraForm.controls[' modalidade ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="classe" placeholder="classe" [formControl]="distribuidoraForm.controls[' classe ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="posto" placeholder="posto" [formControl]="distribuidoraForm.controls[' posto ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="tusddemanda" placeholder="tusddemanda" [formControl]="distribuidoraForm.controls[' tusddemanda ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="tusdenergia" placeholder="tusdenergia" [formControl]="distribuidoraForm.controls[' tusdenergia ']">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+      <input matInput name="teenergia" placeholder="teenergia" [formControl]="distribuidoraForm.controls[' teenergia ']">
+      </mat-form-field>
+
+    <div>
+      <button mat-button [type]="submit" [disabled]="distribuidoraForm.invalid">Save</button>
+      <span></span>
+      <button mat-button color="warn" type="button" (click)="dialogRef.close(false)">Cancel</button>
+    </div>
+  </div>
+  </form>

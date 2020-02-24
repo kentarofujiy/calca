@@ -26,12 +26,20 @@ import { CenarioTableComponent } from './cenario-table/cenario-table.component';
 import { CenarioDialogComponent } from './cenario-dialog/cenario-dialog.component';
 import { CenarioDeleteDialogComponent } from './cenario-delete-dialog/cenario-delete-dialog.component';
 
+import { DistribuidoraTableComponent } from './distribuidora-table/distribuidora-table.component';
+import { DistribuidoraDialogComponent } from './distribuidora-dialog/distribuidora-dialog.component';
+import { DistribuidoraDeleteDialogComponent } from './distribuidora-delete-dialog/distribuidora-delete-dialog.component';
+
+ 
+
 //  data services
 import { ProductDataService } from './product-data.service';
 import { TarifaDataService } from './tarifa-data.service';
 import { ClienteDataService } from './cliente-data.service';
 import { LancamentoDataService } from './lancamento-data.service';
 import { CenarioDataService } from './cenario-data.service';
+import { DistribuidoraDataService } from './distribuidora-data.service';
+
 
 
 
@@ -85,6 +93,10 @@ const routes:Routes = [
   { 
     path: 'cenariostable',
     component: CenarioTableComponent
+  },
+  { 
+    path: 'distribuidorastable',
+    component: DistribuidoraTableComponent
   }
 ]
 
@@ -106,7 +118,10 @@ const routes:Routes = [
     LancamentoDeleteDialogComponent,
     CenarioTableComponent,
     CenarioDialogComponent,
-    CenarioDeleteDialogComponent      
+    CenarioDeleteDialogComponent,
+    DistribuidoraTableComponent,
+    DistribuidoraDialogComponent,
+    DistribuidoraDeleteDialogComponent      
   ],
   imports: [
     BrowserModule,
@@ -146,6 +161,7 @@ const routes:Routes = [
     ClienteDataService,
     LancamentoDataService,
     CenarioDataService,
+    DistribuidoraDataService,
      ApiService,
   ],
   bootstrap: [AppComponent]

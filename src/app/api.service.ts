@@ -6,6 +6,7 @@ import { Tarifa } from './tarifa';
 import { Cliente } from './cliente';
 import { Cenario } from './cenario';
 import { Lancamento } from './lancamento';
+import { Distribuidora } from './distribuidora';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -303,6 +304,62 @@ export class ApiService {
       return this.http
        .delete(API_URL + '/cenarios/' + cenarioId)
       // .delete('/api/v1/cenarios/' + cenarioId)
+      .map(response => null)
+      .catch(this.handleError);
+    }
+
+       // API: GET /distribuidoras
+       public getAllDistribuidoras(): Observable<Distribuidora[]> {
+        return this.http
+          .get(API_URL + '/distribuidoras')
+            //.get('/api/v1/distribuidoras')
+          .map(response => {
+            const distribuidoras = response.json().data;
+            console.log(response.json().data);
+            return distribuidoras.map((distribuidora) => new Distribuidora(distribuidora));
+          })
+          .catch(this.handleError);
+      }
+    
+      // API: POST /distribuidoras
+      public createDistribuidora(distribuidora: Distribuidora): Observable<Distribuidora> {
+        return this.http
+        .post(API_URL + '/distribuidoras', distribuidora)
+        //.post('/api/v1/distribuidoras', distribuidora)
+        .map(response => {
+          distribuidora.id = response.json().data;
+          return new Distribuidora(distribuidora);
+        })
+        .catch(this.handleError);
+      }
+  
+    // API: GET /distribuidoras/:id
+    public getDistribuidoraById(distribuidoraId: number): Observable<Distribuidora> {
+      return this.http
+      .get(API_URL + '/distribuidoras/' + distribuidoraId)
+      // .get('/api/v1/distribuidoras/' + distribuidoraId)
+      .map(response => {
+        return new Distribuidora(response.json());
+      })
+      .catch(this.handleError);
+    }
+  
+    // API: PUT /distribuidoras/:id
+    public updateDistribuidora(id: number, distribuidora: Distribuidora): Observable<Distribuidora> {
+      return this.http
+       .put(API_URL + '/distribuidoras/' + distribuidora.id, distribuidora)
+      // .put('/api/v1/distribuidoras/' + id, distribuidora)
+      .map(response => {
+        return new Distribuidora(distribuidora);
+      })
+      .catch(this.handleError);
+    }
+  
+    // DELETE /distribuidoras/:id
+    public deleteDistribuidoraById(distribuidoraId: number): Observable<null>  {
+      return this.http
+       .delete(API_URL + '/distribuidoras/' + distribuidoraId)
+      // .delete('/api/v1/distribuidoras/' + distribuidoraId)
       .map(response => null)
       .catch(this.handleError);
     }
